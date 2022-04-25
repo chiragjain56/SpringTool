@@ -1,0 +1,37 @@
+A.  What do you mean by IoC(Inversion of Control) Container?
+ans:
+It refer to transferring the control of objects and their dependencies from the main program to a container or framework
+Its a design principle that allows classes to be loosely coupled,easier to test and maintain
+some of the example are Call backs dependency injection and event loops;
+
+//===========================================================================================
+B.  What are Spring Beans?
+ans:
+A object created or managed by the Spring IoC container are called beans,or we can say
+A bean is an object that is instantiated, assembled, or managed by a Spring IoC container
+
+//===========================================================================================
+C. What are the bean scopes available in Spring
+ans:
+there are five type of bean scope available 
+1. singleton
+2.prototype
+3.request
+4.session
+5.global-session
+//===========================================================================================
+
+D. What is autowiring and name the different modes of it.What are the limitations
+of autowiring
+ans:
+Auto wiring provides you to inject the object dependency implicity.
+It internally uses setter or constructor injection;
+some mode are :
+no mode
+byName mode
+auto detect mode 
+byType and constructor mode;
+
+limitations:
+restriction to use for primitive and string values
+we have no control of it
