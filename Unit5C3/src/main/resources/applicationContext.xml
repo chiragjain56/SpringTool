@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="circle" class="q3.Circle" >
+		<constructor-arg name="radius" value="5"></constructor-arg>
+	</bean>
+	<bean id="square" class="q3.Square" >
+		<constructor-arg name="length" value="4"></constructor-arg>
+	</bean>
+	<bean id="rectangle" class="q3.Rectangle" >
+		<constructor-arg name="length" value="12"></constructor-arg>
+		<constructor-arg name="width" value="8"></constructor-arg>
+	</bean>
+	<bean id="circleA" class="q3.CalculateArea">
+		<property name="shape" ref="circle"></property>
+	</bean>
+	<bean id="squareA" class="q3.CalculateArea">
+		<property name="shape" ref="square"></property>
+	</bean>
+	<bean id="recA" class="q3.CalculateArea">
+		<property name="shape" ref="rectangle"></property>
+	</bean>
+</beans>
