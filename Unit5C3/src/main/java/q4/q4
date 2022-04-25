@@ -5,12 +5,14 @@ Its a design principle that allows classes to be loosely coupled,easier to test 
 some of the example are Call backs dependency injection and event loops;
 
 //===========================================================================================
+
 B.  What are Spring Beans?
 ans:
 A object created or managed by the Spring IoC container are called beans,or we can say
 A bean is an object that is instantiated, assembled, or managed by a Spring IoC container
 
 //===========================================================================================
+
 C. What are the bean scopes available in Spring
 ans:
 there are five type of bean scope available 
